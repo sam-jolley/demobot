@@ -8,8 +8,8 @@ def helloworld():
 
 @app.route('/ask', methods=['GET', 'POST'])
 def greet():
-    name = request.values.get("name")
-    return f"Hiiiiiiiiiiiii {name}"
+    text = request.values.get("text")
+    return f"Hiiiiiiiiiiiii {text}"
 
 
 @app.route('/ncss')
