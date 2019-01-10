@@ -6,6 +6,10 @@ app = Flask(__name__)
 def helloworld():
     return "404 site not found"
 
+@app.route('/greet', methods=['GET', 'POST'])
+def greet():
+    return "Hiiiiiiiiiiiiiiii"
+
 
 @app.route('/ncss')
 def ncss():
