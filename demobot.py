@@ -6,9 +6,9 @@ app = Flask(__name__)
 def helloworld():
     return "404 site not found"
 
-@app.route('/greet', methods=['GET', 'POST'])
+@app.route('/ask', methods=['GET', 'POST'])
 def greet():
-    return "Hiiiiiiiiiiiii"
+    return "Hi"
 
 
 @app.route('/ncss')
