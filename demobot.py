@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -8,7 +8,8 @@ def helloworld():
 
 @app.route('/ask', methods=['GET', 'POST'])
 def greet():
-    return "Hi"
+    name = request.values.get("name")
+    return f"Hiiiiiiiiiiiii {name}"
 
 
 @app.route('/ncss')
@@ -16,4 +17,4 @@ def ncss():
     return "<h1>ncss</h1>"
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
