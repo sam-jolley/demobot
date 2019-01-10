@@ -1,4 +1,5 @@
 from flask import Flask, request
+import requests
 
 app = Flask(__name__)
 
@@ -8,7 +9,7 @@ def helloworld():
 
 @app.route('/ask', methods=['GET', 'POST'])
 def greet():
-    text = request.values.get("text")
+    text = request.post()
     return f"Hiiiiiiiiiiiii {text}"
 
 
