@@ -8,7 +8,7 @@ def helloworld():
 
 @app.route('/greet', methods=['GET', 'POST'])
 def greet():
-    return "Hiiiiiiiiiiiiiiii"
+    return "fuck you jason"
 
 
 @app.route('/ncss')
